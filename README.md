@@ -21,6 +21,16 @@ brew install --cask zobzn/tap/chezmoi-ui
 brew upgrade --cask chezmoi-ui
 ```
 
+## Troubleshooting
+
+### "chezmoi-ui.app is damaged and can't be opened"
+
+macOS blocks the app because it is not notarized. Run this to fix it:
+
+```sh
+xattr -d com.apple.quarantine /Applications/chezmoi-ui.app
+```
+
 ## Uninstall
 
 ```sh
