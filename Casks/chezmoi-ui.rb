@@ -1,14 +1,14 @@
 cask "chezmoi-ui" do
-  version "0.0.1"
+  version "0.0.2"
 
   on_arm do
     url "https://github.com/zobzn/chezmoi-ui/releases/download/v#{version}/chezmoi-ui-darwin-aarch64.app.tar.gz"
-    sha256 "a7dde44ee045b3b4d9e0ce427bf3aa0c25728a59cb7c89383df9e5cedc8939c4"
+    sha256 "868414bdc6076a6c5a619a2e7e5647404eae8bf5afa121d6839143945e032fd7"
   end
 
   on_intel do
     url "https://github.com/zobzn/chezmoi-ui/releases/download/v#{version}/chezmoi-ui-darwin-x64.app.tar.gz"
-    sha256 "f3990af80a419578abed2be9820dd87125535617a1fa13c12881e6728400d74a"
+    sha256 "60613196b44fdfd42a5dc2e5a87a8a7f9686fb434048952aa8823bb181d2fb08"
   end
 
   name "chezmoi-ui"
@@ -19,3 +19,4 @@ cask "chezmoi-ui" do
 
   depends_on formula: "chezmoi"
 end
+
