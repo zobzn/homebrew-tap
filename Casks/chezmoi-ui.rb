@@ -16,4 +16,6 @@ cask "chezmoi-ui" do
   homepage "https://github.com/zobzn/chezmoi-ui"
 
   app "chezmoi-ui.app"
+
+  depends_on formula: "chezmoi"
 end
