@@ -15,6 +15,12 @@ Or in one command:
 brew install --cask zobzn/tap/chezmoi-ui
 ```
 
+If macOS shows a security warning and blocks the app from opening, run:
+
+```sh
+xattr -d com.apple.quarantine /Applications/chezmoi-ui.app
+```
+
 ## Update
 
 ```sh
